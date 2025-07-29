@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TVM](https://img.shields.io/badge/Based%20on-TVM-orange)](https://tvm.apache.org/)
 [![Status](https://img.shields.io/badge/Status-Planning-yellow.svg)](https://github.com/your-org/tasklevel-lang-multibackend)
@@ -235,7 +235,7 @@ leaf_task_bindings:
 
 ## 📄 许可证
 
-本项目采用 [Apache License 2.0](./LICENSE) 开源许可证。
+本项目采用 [MIT License](./LICENSE) 开源许可证。
 
 ## 🙏 致谢
 
