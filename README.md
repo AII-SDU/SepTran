@@ -1,11 +1,11 @@
-# TaskLevel Lang MultiBackend：基于逻辑映射分离的AI编译器框架
+# SepTran：基于逻辑映射分离的AI编译器框架
 
 <div align="center">
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TVM](https://img.shields.io/badge/Based%20on-TVM-orange)](https://tvm.apache.org/)
-[![Status](https://img.shields.io/badge/Status-Planning-yellow.svg)](https://github.com/your-org/tasklevel-lang-multibackend)
+[![Status](https://img.shields.io/badge/Status-Planning-yellow.svg)](https://github.com/AII-SDU/septran)
 
 **🚧 项目规划中 🚧**  
 **一个革命性的AI编译器框架，彻底分离算法逻辑与硬件映射，一次编写，多端部署**
@@ -14,7 +14,7 @@
 
 ## 🚀 项目愿景
 
-TaskLevel Lang MultiBackend 站在巨人的肩膀上，深度借鉴了 [TileLang](https://github.com/tile-ai/tilelang) 的解耦思想和 TVM TensorIR 的设计理念，同时创新性地引入了 [Cypress 论文](https://rohany.github.io/publications/pldi2025-cypress.pdf) "逻辑与映射分离" 的核心思想，构建了一个全新的AI编译器框架。
+SepTran 站在巨人的肩膀上，深度借鉴了 [TileLang](https://github.com/tile-ai/tilelang) 的解耦思想和 TVM TensorIR 的设计理念，同时创新性地引入了 [Cypress 论文](https://rohany.github.io/publications/pldi2025-cypress.pdf) "逻辑与映射分离" 的核心思想，构建了一个全新的AI编译器框架。
 
 我们的目标是**彻底解决AI编译器的N×M复杂度问题**：让开发者为N个算子逻辑编写一次代码，通过M个硬件映射文件即可适配所有目标硬件，从根本上解决AI编译器的可移植性挑战。
 
@@ -26,7 +26,7 @@ TaskLevel Lang MultiBackend 站在巨人的肩膀上，深度借鉴了 [TileLang
 
 ## 🏗️ 架构设计
 
-TaskLevel Lang MultiBackend 采用创新的三层架构设计，基于 [TVM](https://tvm.apache.org/) 生态构建：
+SepTran 采用创新的三层架构设计，基于 [TVM](https://tvm.apache.org/) 生态构建：
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -171,10 +171,10 @@ public:
 ### 第四步：编译和执行
 
 ```python
-import tasklevel_compiler as tlc
+import septran_compiler as stc
 
 # 编译：逻辑 + 映射 → 高性能代码
-kernel = tlc.compile(
+kernel = stc.compile(
     logic_file="gemm_logic.py",
     mapping_file="gemm_on_nvidia_gpu.mapping.yaml"
 )
@@ -249,8 +249,8 @@ leaf_task_bindings:
 
 **⭐ 如果您对这个项目感兴趣，请给我们一个Star关注进展！⭐**
 
-[💬 参与讨论](https://github.com/your-org/tasklevel-lang-multibackend/issues) • 
-[📋 提需求建议](https://github.com/your-org/tasklevel-lang-multibackend/issues)
+[💬 参与讨论](https://github.com/AII-SDU/septran/issues) • 
+[📋 提需求建议](https://github.com/AII-SDU/septran/issues)
 
 **🚀 项目启动时我们会在这里公告，欢迎届时参与贡献！**
 
