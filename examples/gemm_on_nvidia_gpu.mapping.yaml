@@ -1,0 +1,11 @@
+# 示例 YAML 映射文件：GEMM 在 NVIDIA GPU 上的映射
+entrypoint: gemm_block_gpu
+
+task_mappings:
+  gemm_block_gpu:
+    task_name: gemm_block_logic
+    proc: BLOCK
+    mems: {C: REGISTER, A: SHARED, B: SHARED}
+    pipeline: 3
+    leaf_task_bindings:
+      gemm_leaf_logic: gemm_leaf_tensorcore 

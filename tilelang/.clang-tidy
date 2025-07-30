@@ -1,0 +1,10 @@
+Checks: >
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  -readability-identifier-length
+WarningsAsErrors: '*'
+
+HeaderFilterRegex: '^(?!.*(3rdparty|build)).*$'
