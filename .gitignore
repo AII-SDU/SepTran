@@ -121,9 +121,10 @@ cython_debug/
 
 # TileLang 3rdparty dependencies (large external repos)
 # 注意：我们保留源码但不追踪这些大型外部依赖的变更
-tilelang/3rdparty/tvm/
-tilelang/3rdparty/cutlass/
-tilelang/3rdparty/composable_kernel/
+
+!tilelang/3rdparty/tvm
+!tilelang/3rdparty/cutlass
+!tilelang/3rdparty/composable_kernel
 
 # TileLang build artifacts
 tilelang/build/
