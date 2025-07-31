@@ -1,0 +1,38 @@
+
+<svg viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Box 1: Logic Layer -->
+  <rect x="25" y="20" width="550" height="110" rx="10" ry="10" fill="none" stroke="black" stroke-width="2"/>
+  <text x="300" y="55" font-size="20" text-anchor="middle">逻辑层 (Task Lang前端)</text>
+  <text x="300" y="95" font-size="18" text-anchor="middle">✨ 纯粹的,层次化的计算任务描述, 完全硬件无关</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="300" y1="130" x2="300" y2="170" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Box 2: Mapping Layer -->
+  <rect x="25" y="190" width="550" height="110" rx="10" ry="10" fill="none" stroke="black" stroke-width="2"/>
+  <text x="300" y="225" font-size="20" text-anchor="middle">映射层 (硬件映射文件)</text>
+  <text x="300" y="265" font-size="18" text-anchor="middle">🎯 声明式的硬件映射规范, 专家编写的性能优化知识</text>
+
+  <!-- Arrow 2 -->
+  <line x1="300" y1="300" x2="300" y2="340" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Box 3: Compiler -->
+  <rect x="25" y="360" width="550" height="110" rx="10" ry="10" fill="none" stroke="black" stroke-width="2"/>
+  <text x="300" y="395" font-size="20" text-anchor="middle">编译器 (智能的映射处理器)</text>
+  <text x="300" y="435" font-size="18" text-anchor="middle">🧠 映射指导下的代码生成, 自动融合逻辑与映射</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="300" y1="470" x2="300" y2="510" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Box 4: TVM IR + CodeGen -->
+  <rect x="25" y="530" width="550" height="110" rx="10" ry="10" fill="none" stroke="black" stroke-width="2"/>
+  <text x="300" y="565" font-size="20" text-anchor="middle">TVM IR + 自定义 CodeGen</text>
+  <text x="300" y="605" font-size="18" text-anchor="middle">⚙️ 生成包含硬件库调用的 TVM TensorIR, 转译为 C 库调用</text>
+
+</svg>
