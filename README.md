@@ -28,7 +28,9 @@ SepTran 站在巨人的肩膀上，深度借鉴了 [TileLang](https://github.com
 
 SepTran 采用创新的四层架构设计，基于 [TVM](https://tvm.apache.org/) 生态构建：
 
-![SepTran 架构图](./img/SepTran_arch.svg)
+<div align="center">
+<img src="./img/SepTran_arch.svg" alt="SepTran 架构图" width="320"/>
+</div>
 
 ## 💻 技术设计
 
