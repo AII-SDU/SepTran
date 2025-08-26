@@ -118,3 +118,5 @@ compiled/
 
 # Cython debug symbols
 cython_debug/ 
+# local design notes
+SepTran.md
