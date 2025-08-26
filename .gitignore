@@ -118,8 +118,3 @@ compiled/
 
 # Cython debug symbols
 cython_debug/ 
-
-# TileLang build artifacts
-tilelang/build/
-tilelang/dist/
-tilelang/*.egg-info/ 

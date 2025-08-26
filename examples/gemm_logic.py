@@ -1,4 +1,7 @@
-"""GEMM 逻辑 Demo（硬件无关）。"""
+"""GEMM 逻辑 Demo（硬件无关）。
+
+这个文件展示了 SepTran 的核心理念：用户编写纯粹的、硬件无关的算法逻辑。
+编译器会根据映射文件自动生成高性能的 TileLang 代码。"""
 
 import tasklang as task
 
@@ -17,6 +20,5 @@ def gemm_block_logic(C, A, B):
     Bp = task.partition(B, by="blocks", shape_from="A")
 
     # 并行遍历子块并启动叶子任务
-    # 这里假设 Cp.shape = (M, N)
-    for i, j in task.parallel_range((len(Cp), len(Cp[0]))):
-        task.launch(gemm_leaf_logic, Cp[i][j], Ap[i], Bp[j]) 
+    for i, j in task.parallel_range(Cp.shape):
+        task.launch(gemm_leaf_logic, Cp[i, j], Ap[i], Bp[j]) 
