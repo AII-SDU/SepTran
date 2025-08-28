@@ -1,3 +1,3 @@
 [submodule "tilelang"]
-	path = tilelang
-	url = https://github.com/zzyu5/tilelang.git
+	path = tilelang-tpu
+	url = git@github.com:AII-SDU/tilelang-tpu.git
